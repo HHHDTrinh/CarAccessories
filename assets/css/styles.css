@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* #61D095: mau xanh nhat */
+    --header-backgroundcolor: #e64646;
+    --header-textcolor: #fff;
+    --header-cartext: #2a2e4b;
+    --hover-btn: #61D095;
+}
+
+html{
+    font-family: Helvetica, Arial ,sans-serif;
+}
+
+
+/* Common */
+.ptb-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ptb-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.ptb-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.mtb-16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.col{
+    float: left;
+}
+
+.col-3{
+    width: 33.33333%;
+}
+
+.col-4{
+    width: 25%;
+}
+
+.row{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main */
+#main{
+
+}
+
+#header{
+    /* New */
+    display: flex;
+    position: fixed;
+    background-color: var(--header-backgroundcolor);
+    z-index: 1;
+    /* Header Height */
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header .left-nav{
+    display: inline-block;
+}
+
+.left-nav a{
+    margin-left: 20px;
+    font-size: 50px;
+    color: var(--header-cartext);
+    /* Header Height */
+    line-height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#nav{
+    /* New */
+    margin: auto;
+    float: right;
+    top: 0%;
+    right: 0;
+}
+
+#nav .right-header-menu{
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: var(--header-textcolor);
+    text-transform: uppercase;
+}
+
+#nav li a{
+    /* line-height: 45px; */
+    /* New */
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a{
+    color: #fff;
+    background-color: #2a2e4b;
+    /* New */
+    border-radius: 4px;
+}
+
+#nav .subnav li:hover a{
+    color: #fff;
+    background-color: #2a2e4b;
+}
+
+#nav .subnav a{
+    padding: 0 12px;
+    color: var(--header-textcolor);
+    line-height: 38px;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header-backgroundcolor);
+    /* thay màu */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    min-width: 160px;
+}
+
+#slider{
+    padding-top: 50%;
+    /* Header Height */
+    margin-top: 60px;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    margin-left: 5%;
+    position: absolute;
+    bottom: 40%;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#slider .text-heading{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#slider .text-description{
+    font-size: 18px;
+}
+
+#slider .slider-buy-btn{
+    border-radius: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e64646;
+    padding: 12px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+
+#slider .slider-buy-btn:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+#slider .slider-buy-icon{
+    font-size: 15px;
+}
+
+#content{
+
+}
+
+#content .content-head{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content__head-name{
+    display: flex;
+}
+
+#content .content__head-detail{
+    margin: auto;
+    border: 4px solid #2a2e4b;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+#content .content__list-item{
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+}
+
+#content .content__item-img{
+    width: 95%;
+    display: block;
+    opacity: 1;
+    margin: auto;
+    height: 200px;
+}
+
+#content .content__item-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+#content .content__item-price{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#content .content__item-btn{
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--header-backgroundcolor);
+    padding: 12px 20px;
+}
+
+#content .content__item-btn:hover{
+    color: #fff;
+    background-color: var(--hover-btn);
+    cursor: pointer;
+}
+
+/* Dat width cho div cha... de padding cho deu 2 phia */
+/* Canh deu giua cac item */
+/* Doi item moi 
+Chinh su btn
+Css cac phan tu css con lai
+*/
+#footer{
+
+}
+
