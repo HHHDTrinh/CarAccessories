@@ -1,12 +1,15 @@
+<!-- Xem cách resize ảnh và tải lại toàn bộ ảnh cho product. Có thể bỏ camera 360 và đổi thành 1 linh kiện khác -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon/fav-icon.svg">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js"></script>
     <title>A CAR</title>
 </head>
 <body>
@@ -16,137 +19,437 @@
             <div class="left-nav">
                 <a href="index.html"></i>A-CAR</a>
             </div>
-            <!-- Right Header -->
+            <!-- Center Header -->  
             <ul id="nav">
-                <li><a href=""><i class="right-header-menu ti-home"></i>Home</a></li>
-                <li><a href=""><i class="right-header-menu ti-announcement"></i>News</a></li>
+                <li><a href=""><i class="nav-header__menu fas fa-home"></i>Home</a></li>
+                <li><a href=""><i class="nav-header__menu fas fa-newspaper"></i>News</a></li>
+                <li><a href=""><i class="nav-header__menu fas fa-phone-square-alt"></i></i>Contact</a></li>
+                <li><a href=""><i class="nav-header__menu nav-header__menu fas fa-info-circle"></i></i>About Us</a></li>
                 <li>
-                    <a href=""><i class="right-header-menu ti-shopping-cart"></i>For Sales</a>
+                    <a href=""><i class="nav-header__menu fas fa-wallet"></i></i>For Sales</a>
                     <ul class="subnav">
-                        <li><a href="">Car Interiors</a></li>
-                        <li><a href="">Car Exteriors</a></li>
-                        <li><a href="">Car Lights</a></li>
+                        <li><a href="">Screen</a></li>
+                        <li><a href="">Headlights</a></li>
+                        <li><a href="">Seat Covers</a></li>
+                        <li><a href="">Wheels & Rims</a></li>   
                     </ul>
                 </li>
-                <li><a href=""><i class="right-header-menu ti-headphone-alt"></i>Contact</a></li>
-                <li><a href=""><i class="right-header-menu ti-user"></i>Sign up &amp; Login</a></li>
             </ul>
+            <!-- Xem lai -->
+            <!-- Right Header -->
+            <div class="right-nav">
+                <i class="right-nav__ic fas fa-user"></i>
+                <span class="vertical-line"></span>
+                <i class="right-nav__ic fas fa-shopping-cart"></i>
+            </div>
         </div>
 
         <div id="slider">
             <div class="text-content">
-                <h2 class="text-heading ptb-12">Car Accessary</h2>
-                    <div class="text-description ptb-12">We specialize in providing specialized electronic items for cars. <br>Prestige - Quality - Good service.</div>
-                    <button class="slider-buy-btn ptb-12">Buy Now<i class="slider-buy-icon ti-angle-right"></i></button>
+                <h2 class="text-heading ptb-8">Car Accessary</h2>
+                    <div class="text-description ptb-8">We specialize in providing specialized electronic items for cars. <br>Prestige - Quality - Good service.</div>
+                    <button class="slider-buy-btn ptb-8">Buy Now<i class="slider-buy-icon   "></i></button>
                 </div>
         </div>
 
         <div id="content">
-            <div class="content-head ptb-64">
-                <!-- Screen -->
-                <div class="content__head-name row">
-                    <h3 class="content__head-detail">
-                        <i class="ti-star"></i>
-                        Touch Screen Car
-                        <i class="ti-star"></i>
-                    </h3>
+            <!-- Screen -->
+            <div class="content-section ptb-32">
+                <div class="grid wide">
+                    <div class="content-header">
+                        <div class="row">
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__left">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="content-header__centered">
+                                    <img width="100%" height="100%" src="./assets/img/content/list/Rectangle.svg" alt="">
+                                    <h2><i class="fas fa-star"></i>Screen<i class="fas fa-star"></i></h2>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__right">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__head-list row ptb-64">
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD honda civic.jpg" alt="DVD HONDA CIVIC" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
-                    </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD nissan x-trail.JPEG" alt="DVD NISSAN X-TRAIL 2006" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
-                    </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/TOYOTA-ALTIS-2003-2005.JPEG" alt="TOYOTA ALTIS 2003-2005" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
-                    </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/altis-z800-1.png" alt="DVD ALTIS Z800" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+
+                <div class="grid wide">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/screen/Toyota Prius 2nd.JPEG" alt="Toyota Prius 2nd Android 9″">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Toyota Prius 2nd Android 9″</h4>
+                                        <p class="list-details__cost mtb-16">418.25$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/screen/Toyota Corolla 121.png" alt="Toyota Corolla 121">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Toyota Corolla 121 Android</h4>
+                                        <p class="list-details__cost mtb-16">435.39$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/screen/Honda Vezel.png" alt="Honda Vezel Android 9″">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Honda Vezel Android 9″</h4>
+                                        <p class="list-details__cost mtb-16">401.89$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img width="100%" height="100%" src="./assets/img/content/items/screen/Nissan X-Trail.jpg" alt="Nissan X-Trail ">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Nissan X-Trail Android</h4>
+                                        <p class="list-details__cost mtb-16">442.10$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="content-head ptb-64">
-                <!-- Screen -->
-                <div class="content__head-name row">
-                    <h3 class="content__head-detail">
-                        <i class="ti-star"></i>
-                        CAMERA 360
-                        <i class="ti-star"></i>
-                    </h3>
+
+            <!-- Headlights -->
+            <div class="content-section ptb-32">
+                <div class="grid wide">
+                    <div class="content-header">
+                        <div class="row">
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__left">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="content-header__centered">
+                                    <img width="100%" height="100%" src="./assets/img/content/list/Rectangle.svg" alt="">
+                                    <h2><i class="fas fa-star"></i>Headlights<i class="fas fa-star"></i></h2>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__right">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__head-list row ptb-64">
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD honda civic.jpg" alt="DVD HONDA CIVIC" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+
+                <div class="grid wide">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/headlights/Anzo® - Custom Headlights.jpg" alt="Anzo® - Custom Headlights">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Anzo® - Custom Headlights</h4>
+                                        <p class="list-details__cost mtb-16">418.25$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/headlights/Lumen® - Custom Headlights.jpg" alt="Lumen® - Custom Headlights">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Lumen® - Custom Headlights</h4>
+                                        <p class="list-details__cost mtb-16">435.39$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/headlights/Replace® - Factory Headlights.jpg" alt="Replace® - Factory Headlights">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Replace® - Factory Headlights</h4>
+                                        <p class="list-details__cost mtb-16">401.89$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img width="100%" height="100%" src="./assets/img/content/items/headlights/Spyder® - Custom Headlights.jpg" alt="Spyder® - Custom Headlights">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Spyder® - Custom Headlights</h4>
+                                        <p class="list-details__cost mtb-16">442.10$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD nissan x-trail.JPEG" alt="DVD NISSAN X-TRAIL 2006" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
-                    </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/TOYOTA-ALTIS-2003-2005.JPEG" alt="TOYOTA ALTIS 2003-2005" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
-                    </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/altis-z800-1.png" alt="DVD ALTIS Z800" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+                </div>
+                <!-- ADS -->
+                <div class="grid">
+                    <div class="content-ads">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="ads-left">
+                                    <div class="ads__desc">
+                                        <h1>Big Sale</h1>
+                                        <h2 style="font-size: 40px;">Weekend Flash Sale</h2>
+                                        <p style="font-size: 20px;">Get 20% off any purchase in February</p>
+                                        <button>More<i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="ads-right">
+                                    <div class="ads__desc">
+                                        <h1>Big Sale</h1>
+                                        <h2 style="font-size: 40px;">Weekend Flash Sale</h2>
+                                        <p style="font-size: 20px;">Get 20% off any purchase in February</p>
+                                        <button>More<i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="content-head ptb-64">
-                <!-- Screen -->
-                <div class="content__head-name row">
-                    <h3 class="content__head-detail">
-                        <i class="ti-star"></i>
-                        Black Box Car
-                        <i class="ti-star"></i>
-                    </h3>
+
+            <!-- Seat Covers -->
+            <div class="content-section ptb-32">
+                <div class="grid wide">
+                    <div class="content-header">
+                        <div class="row">
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__left">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="content-header__centered">
+                                    <img width="100%" height="100%" src="./assets/img/content/list/Rectangle.svg" alt="">
+                                    <h2><i class="fas fa-star"></i>Seat Covers<i class="fas fa-star"></i></h2>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__right">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content__head-list row ptb-64">
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD honda civic.jpg" alt="DVD HONDA CIVIC" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+
+                <div class="grid wide">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/seatCovers/coverking-neosupreme-2-rows_1.jpg" alt="Coverking® - Custom Neosupreme">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Coverking® - Custom Neosupreme</h4>
+                                        <p class="list-details__cost mtb-16">418.25$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/seatCovers/Rixxu-milano-series-2-rows-black-seat-covers_1.jpg" alt="Rixxu™ - Milano">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Rixxu™ - Milano</h4>
+                                        <p class="list-details__cost mtb-16">435.39$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/seatCovers/Rixxu-super-sport-series-2-rows-red-seat-covers_1.jpg" alt="Rixxu™ - Super Sport">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Rixxu™ - Super Sport</h4>
+                                        <p class="list-details__cost mtb-16">401.89$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img width="100%" height="100%" src="./assets/img/content/items/seatCovers/seatsaver-carhartt-2-rows-seat-covers_1.jpg" alt="Carhartt® - Custom SeatSaver™">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">Carhartt® - Custom SeatSaver™</h4>
+                                        <p class="list-details__cost mtb-16">442.10$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/DVD nissan x-trail.JPEG" alt="DVD NISSAN X-TRAIL 2006" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+                </div>
+            </div>
+            <!-- Wheels & Rims -->
+            <div class="content-section ptb-32">
+                <div class="grid wide">
+                    <div class="content-header">
+                        <div class="row">
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__left">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="content-header__centered">
+                                    <img width="100%" height="100%" src="./assets/img/content/list/Rectangle.svg" alt="">
+                                    <h2><i class="fas fa-star"></i>Wheels & Rims<i class="fas fa-star"></i></h2>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__right">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/TOYOTA-ALTIS-2003-2005.JPEG" alt="TOYOTA ALTIS 2003-2005" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+                </div>
+
+                <div class="grid wide">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/wheelRim/konig-runlite-gold_1.jpg" alt="KONIG® - RUNLITE Gold">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">KONIG® - RUNLITE Gold</h4>
+                                        <p class="list-details__cost mtb-16">418.25$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/wheelRim/ns1805-hyper-silver_1.jpg" alt="NS SERIES® - NS1805 Hyper Silver">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">NS SERIES® - NS1805 Hyper</h4>
+                                        <p class="list-details__cost mtb-16">435.39$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./assets/img/content/items/wheelRim/strada-perfetto-bronze_1.jpg" alt="STRADA® - PERFETTO Bronze">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">STRADA® - PERFETTO Bronze</h4>
+                                        <p class="list-details__cost mtb-16">401.89$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img width="100%" height="100%" src="./assets/img/content/items/wheelRim/xd-series-xd838-mammoth-gloss-black-milled-red-accents_1.jpg" alt="XD SERIES® - XD838 MAMMOTH Gloss Black Milled with Red Accents">
+                                    <div class="list-details">
+                                        <h4 class="list-details__name">XD SERIES® - Custom XD838</h4>
+                                        <p class="list-details__cost mtb-16">442.10$</p>
+                                        <button class="list-details__btn">ADD TO CART</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content__list-item col col-4">
-                        <img src="./assets/img/content/items/screen/altis-z800-1.png" alt="DVD ALTIS Z800" class="content__item-img">
-                        <p class="content__item-name mtb-16">Honda Civic 2007 -2011</p>
-                        <p class="content__item-price">446.29$</p>
-                        <button class="content__item-btn mtb-16">Add to cart</button>
+                </div>
+            </div>
+            <!-- News -->
+            <div class="content-section ptb-32">
+                <div class="grid wide">
+                    <div class="content-header">
+                        <div class="row">
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__left">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="content-header__centered">
+                                    <img width="100%" height="100%" src="./assets/img/content/list/Rectangle.svg" alt="">
+                                    <h2><i class="fas fa-star"></i>News<i class="fas fa-star"></i></h2>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-0 c-0">
+                                <div class="content-header__right">
+                                    <div class="line"></div>
+                                    <div class="line-full"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid wide">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col l-4 m-4 c-12">
+                                <div class="news-container">
+                                    <img src="./assets/img/slider/slider2.jpg" alt="">
+                                    <div class="news-container__desc mtb-16">
+                                        <h4>Toyota</h4>
+                                        <p>This is paragraph</p>
+                                        <a href="http://">More<i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="news-container">
+                                    <img src="./assets/img/slider/slider3.jpg" alt="">
+                                    <div class="news-container__desc mtb-16">
+                                        <h4>Nissan</h4>
+                                        <p>This is paragraph</p>
+                                        <a href="http://">More<i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="news-container">
+                                    <img src="./assets/img/slider/slider4.jpg" alt="">
+                                    <div class="news-container__desc mtb-16">
+                                        <h4>Honda</h4>
+                                        <p>This is paragraph</p>
+                                        <a href="http://">More<i class="fas fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
