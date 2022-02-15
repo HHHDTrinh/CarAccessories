@@ -16,8 +16,20 @@ html{
     font-family: Helvetica, Arial ,sans-serif;
 }
 
+textarea  
+{  
+    font-family: Helvetica, Arial ,sans-serif;
+}
 
 /* Common */
+.f-right{
+    float: right;
+}
+
+.d-inblock{
+    display: inline-block;
+}
+
 .ptb-8{
     padding-top: 8px;
     padding-bottom: 8px;
@@ -41,12 +53,24 @@ html{
     padding-top: 64px;
 }
 
+.pb-32{
+    padding-bottom: 32px;
+}
+
+.mtb-8{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .mtb-16{
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
-
+.mtb-32{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
 /* Main */
 #main{
     overflow: hidden;
@@ -424,23 +448,43 @@ html{
     background: linear-gradient(to left, rgba(247, 169, 168, 0.52), rgba(97, 63, 117, 0.73)),
                 url('../img/content/contact/CE.jpg') top center / cover no-repeat;
     width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
+    height: 400px;
 }
 
-#content .contact-desc p{
+#content .contact-body .contact-body__input{
+    font-style: italic;
+    font-size: 18px;
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+#content .contact-body .contact-body__btn{
+    width: 33.3333%;
+    padding: 8px 0;
+    font-size: 16px;
+    background-color: var(--header-backgroundcolor);
     color: #fff;
-    font-size: 20px;
-    line-height: 1.6;
+    border: none;
+    border-radius: 5px;
+    outline: none;
 }
 
-#content .contact-desc i{
-    width: 30px;
-    font-size: 20px;
+#content .contact-body .contact-msg{
+    font-style: italic;
+    width: 100%;
+    border-radius: 8px;
+    height: 100px;
+    font-size: 18px;
+    outline: none;
 }
 
 #footer{
-
+    background-color: var(--header-backgroundcolor);
+    color: #fff;
+    height: 400px;
 }
 
