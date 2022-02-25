@@ -13,12 +13,12 @@
 }
 
 html{
-    font-family: Helvetica, Arial ,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 textarea  
 {  
-    font-family: Helvetica, Arial ,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Common */
@@ -77,15 +77,12 @@ textarea
 }
 
 #header{
-    /* 26/1 */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Cũ */
     position: fixed;
     background-color: var(--header-backgroundcolor);
     z-index: 1;
-    /* Header Height */
     height: 60px;
     top: 0;
     left: 0;
@@ -93,8 +90,6 @@ textarea
 }
 
 #header .left-nav{
-    /* 26/1 */
-    /* display: inline-block; */
     margin-left: 20px;
 }
 
@@ -104,18 +99,10 @@ textarea
     font-style: italic;
     font-size: 50px;
     color: var(--header-cartext);
-    /* Header Height */
     line-height: 60px;
 }
 
 #nav{
-    /* 26/1 */
-    /* display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 9px 0; */
 }
 
 #nav .nav-header__menu{
@@ -149,7 +136,6 @@ textarea
 #nav > li:hover > a{
     color: #fff;
     background-color: #2a2e4b;
-    /* New */
     border-radius: 4px;
 }
 
@@ -179,12 +165,6 @@ textarea
 }
 
 #header .right-nav{
-    /* 26/1 */
-    /* display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 60px;*/
     margin-right: 20px;
 }
 
@@ -208,7 +188,6 @@ textarea
     background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     position: relative;
     padding-top: 40%;
-    /* Header Height */
     margin-top: 60px;
 }
 
@@ -436,7 +415,7 @@ textarea
 
 #content .news-container__desc i{
     margin-left: 5px;
-    color: rgba(230, 70, 70, 1);
+    color: var(--header-backgroundcolor);
 }
 
 #content .news-container__desc a:hover{
@@ -448,39 +427,48 @@ textarea
     background: linear-gradient(to left, rgba(247, 169, 168, 0.52), rgba(97, 63, 117, 0.73)),
                 url('../img/content/contact/CE.jpg') top center / cover no-repeat;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
-#content .contact-body .contact-body__input{
-    font-style: italic;
-    font-size: 18px;
-    width: 100%;
-    padding: 6px 0;
-    border-radius: 6px;
-    outline: none;
-    border: 1px solid #ccc;
-}
-
-
-#content .contact-body .contact-body__btn{
-    width: 33.3333%;
-    padding: 8px 0;
-    font-size: 16px;
-    background-color: var(--header-backgroundcolor);
+#content .content-contact .contact-header{
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    outline: none;
+    margin-top: 36px;
+    text-shadow: 1px 1px 1px #000000;
 }
 
-#content .contact-body .contact-msg{
-    font-style: italic;
-    width: 100%;
-    border-radius: 8px;
-    height: 100px;
-    font-size: 18px;
-    outline: none;
+#content .content-contact .content-contact__details{
+    margin: 0 48px;
 }
+
+#content .content-contact input[type=text], input[type=email], input[type=number], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#content input, textarea::placeholder{
+    font-style: italic;
+}
+
+#content .content-contact input[type=submit] {
+    background-color: var(--header-backgroundcolor);
+    color: white;
+    padding: 12px 120px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-style: normal;
+}
+  
+#content .content-contact input[type=submit]:hover {
+    background-color: var(--hover-btn);
+  }
 
 #footer{
     background-color: var(--header-backgroundcolor);
@@ -488,3 +476,31 @@ textarea
     height: 400px;
 }
 
+#footer .about{
+    line-height: 1.8;
+    margin-top: 32px;
+}
+
+#footer .about--ml{
+    margin-left: 30px;
+}
+
+#footer .details-ic i{
+    margin: 12px 12px 0 0;
+    width: 30px;
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+}
+
+#footer .u-img--circle{
+    margin: 0 9em;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    background: url('../img/footer/u-image.jpg') center / cover no-repeat;
+}
+
+#footer .u-desc{
+    text-align: center;
+}

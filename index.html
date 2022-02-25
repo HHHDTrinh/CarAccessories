@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon/fav-icon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -454,39 +455,40 @@
             </div>
             <!-- Contact -->
             <div class="content-section pb-32">
-                <div class="grid">
-                    <!-- ideas: https://www.pinterest.com/pin/401735229259043396/ -->
-                    <!-- Canh giữa, css contact(padding input, doi mau btn, fsz label,...) -->
-                    <div class="content-contact">
-                        <div class="grid wide">
-                            <div class="contact-header mtb-32 d-inblock">
-                                <h1>Join our Newsletter !</h1>
-                                <p>Let us know more about you !</p>
+                <div class="content-contact">
+                    <div class="grid wide">
+                        <div class="content-contact__details">
+                            <div class="contact-header d-inblock">
+                                <h1 style="margin: 0;">Join our Newsletter !</h1>
+                                <p style="margin: 8px 0; font-style: italic; opacity: 0.9;">Let us know more about you !</p>
                             </div>
                             <div class="contact-body">
-                                <form action="" class="">
+                                <form action="" id="ct-form">
                                     <div class="row">
                                         <div class="col l-6 m-6 c-12">
-                                            <input class="contact-body__input" required type="text" name="" placeholder="First Name" id="">
+                                            <input type="text" id="fname" name="ct-firstname" placeholder="Your name..">
                                         </div>
                                         <div class="col l-6 m-6 c-12">
-                                            <input class="contact-body__input" required type="text" name="" placeholder="Last Name" id="">
+                                            <input type="text" id="lname" name="ct-lastname" placeholder="Your last name..">
                                         </div>
                                     </div>
-                                    <div class="row mtb-8">
+
+                                    <div class="row">
                                         <div class="col l-6 m-6 c-12">
-                                            <input class="contact-body__input" required type="email" name="" placeholder="Email" id="">
+                                            <input type="email" id="lname" name="ct-email" placeholder="Your email..">
                                         </div>
                                         <div class="col l-6 m-6 c-12">
-                                            <input class="contact-body__input" required type="number" name="" placeholder="Phone" id="">
+                                            <input type="number" id="lname" name="ct-pnumber" placeholder="Your phone number..">
                                         </div>
                                     </div>
+                                    
                                     <div class="row">
                                         <div class="col l-12 m-12 c-12">
-                                            <textarea class="contact-msg" placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
+                                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                                         </div>
                                     </div>
-                                    <input type="submit" value="SUBMIT" class="contact-body__btn mtb-16 f-right">                            
+
+                                    <input type="submit" form="ct-form" value="SUBMIT">
                                 </form>
                             </div>
                         </div>
@@ -496,10 +498,46 @@
         </div>
 
         <div id="footer">
-            <!-- <p><i class="fas fa-user"></i>Ho Huy Duc Trinh</p>
-            <p><i class="fas fa-envelope-open"></i>Trinhhhd@gmail.com</p>
-            <p><i class="fas fa-phone"></i>(+84)3259*****</p>
-            <p><i class="fas fa-map-marked"></i>Binh Duong</p> -->
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-4 m-12 c-12">
+                       <div class="about about--ml">
+                            <h2 class="details-header mtb-8">Details</h2>
+                            <h4>Name:</h4>
+                            <p>Ho Huy Duc Trinh</p>
+                            <h4>Age:</h4>
+                            <p>21 years</p>
+                            <h4>Location:</h4>
+                            <p>Binh Duong, Viet Nam</p>
+                            <div class="details-ic">
+                                <a href="mailto:trinhhhd82@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="https://github.com/HHHDTrinh"><i class="fab fa-github"></i></a>
+                                <a href="https://www.facebook.com/d.trinh2012/"><i class="fab fa-facebook"></i></a>
+                                <a href="http://"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="about">
+                            <h2 class="details-header mtb-8">About me</h2>
+                            <p style="text-align: justify;">I am a final year student at the University of Economics and Finance (UEF) majoring in Software Engineering. During the covid-19 pandemic period, I taught myself more about FrontEnd and did a few simple personal projects with HTML, CSS, and Javascript. I hope that I will have the opportunity to participate in activities in the company's working environment to improve my personal experience.</p>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="u-img--circle"></div>
+                        <div class="u-desc mtb-16">
+                            <h2 style="text-transform: uppercase;">Hello, I'm Trinh</h2>
+                            <p class="mtb-16">I am an intern front-end developer who can approach website projects from concept to implementation</p>
+                            <div class="details-ic">
+                                <a href="tel:+84325906***"><i class="fas fa-phone-alt"></i></a>
+                                <a href="mailto:trinhhhd82@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.instagram.com/d.trinh2012/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/d.trinh2012/"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
